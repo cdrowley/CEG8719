@@ -1,8 +1,13 @@
-# CEG8719
+# CEG8719: Geospatial Data, Analytics and AI
 
-This book, the initial submission for CEG3719: Geospatial Data, Analytics and AI, details my journey in acquiring and processing open-source datasets in Geospatial Data Science, serving as both a practical guide and a development environment for all subsequent open-source data work leading to my final MRes research paper in Summer 2024.
+Welcome to the repository of my initial submission for CEG8719. This project focuses on the acquisition and pre-processing of geospatial datasets and will be actively used through to the completion of my final MRes research paper in Summer 2024.
 
-TODO: Add a link to the book here.
+## Repository Overview
+- **Jupyter Book Submission**: The actual submission of work (for Assignment 1 of CEG8719) is compiled and presented using Jupyter Book. This is hosted on GitHub Pages and can be accessed [here](https://cdrowley.github.io/CEG8719/).
+- **Development Environment**: Codespaces is used to provide a consistent development environment for all work. This is hosted on GitHub and can be accessed via the `Code` button above and selecting `Open with Codespaces`.
+- **Documentation**: Links and references to all datasets are documented within the Jupyter Book.
+- **Open Source Datasets**: Hosted within this repository (subject to size constraints) in the `data` folder.
+- **Proprietary Datasets**: These will only be accessible via private cloud storage, these are not hosted within this repository due to size constraints and licensing restrictions.
 
 ------ 
 
