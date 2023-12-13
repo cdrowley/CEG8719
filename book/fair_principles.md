@@ -1,4 +1,4 @@
-# Fair Principles
+# FAIR Principles in Practice
 
 Aafasfasfa
 

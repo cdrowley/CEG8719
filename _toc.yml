@@ -1,20 +1,6 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 
-# Or you organize the TOC by parts
-
-# parts:
-#   - caption: Chapters
-#     numbered: true
-#     maxdepth: 2
-#     chapters:
-#       - file: book/markdown
-#       - file: book/notebooks
-#   - caption: Appendices
-#     chapters:
-#       - file: book/bibliography
-
-
 format: jb-book
 root: book/index
 
@@ -23,27 +9,17 @@ parts:
     chapters:
     - file: book/intro
 
-  - caption: 'Chapter 1: Data Discovery and Selection'
+  - caption: 'Chapters'
+    numbered: true
+    maxdepth: 2
     chapters:
-    - file: book/chapter_1_data_discovery/index
-
-  - caption: 'Chapter 2: Data Access and Processing'
-    chapters:
-    - file: book/chapter_2_data_access/index
-    - file: book/chapter_2_data_access/data_download
-
-  - caption: 'Chapter 3: Data Analysis and Interoperability'
-    chapters:
-    - file: book/chapter_3_data_analysis/index
-    - file: book/chapter_3_data_analysis/data_integration
-
-  - caption: 'Chapter 4: Data Reusability and Applications'
-    chapters:
-    - file: book/chapter_4_data_reusability/index
-
-  - caption: 'Chapter 5: FAIR Principles in Practice'
-    chapters:
-    - file: book/chapter_5_fair_principles/index
+    - file: book/data_discovery
+    - file: book/data_access
+    - file: book/data_download
+    - file: book/data_analysis
+    - file: book/data_integration
+    - file: book/data_reusability
+    - file: book/fair_principles
 
   - caption: 'Conclusion'
     chapters:
