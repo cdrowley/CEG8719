@@ -11,8 +11,5 @@ kernelspec:
   name: python3
 ---
 
-# Bibliography
-
 ```{bibliography}
-
 ```
