@@ -9,7 +9,7 @@ parts:
     chapters:
     - file: book/introduction
 
-  - caption: 'Chapters'
+  - caption: 'Chapters / Notebooks'
     numbered: true
     maxdepth: 2
     chapters:
@@ -27,4 +27,4 @@ parts:
 
   - caption: 'Appendices'
     chapters:
-    - file: book/references
+    - file: book/bibliography
