@@ -7,7 +7,7 @@ root: README
 parts:
   - caption: 'Introduction'
     chapters:
-    - file: book/intro
+    - file: book/introduction
 
   - caption: 'Chapters'
     numbered: true
@@ -27,4 +27,4 @@ parts:
 
   - caption: 'Appendices'
     chapters:
-    - file: book/bibliography
+    - file: book/references
