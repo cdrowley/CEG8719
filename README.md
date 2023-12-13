@@ -9,8 +9,6 @@ Welcome to the repository of my initial submission for CEG8719. This project foc
 - **Open Source Datasets**: Hosted within this repository (subject to size constraints) in the `data` folder.
 - **Proprietary Datasets**: These will only be accessible via private cloud storage, these are not hosted within this repository due to size constraints and licensing restrictions.
 
------- 
+## Acknowledgements
 
-## Credits
-
-This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).
+This book was created using a template from a [cookiecutter-jupyter-book](https://github.com/giswqs/cookiecutter-jupyter-book) template from [Qiusheng Wu](https://scholar.google.com/citations?user=vmml4_0AAAAJ). The cookiecutter book itself builds upon the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).
