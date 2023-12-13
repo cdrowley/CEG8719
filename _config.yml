@@ -56,9 +56,9 @@ sphinx:
     html_theme_options:
       use_download_button: true
       repository_url: https://github.com/cdrowley/CEG8719
-      use_issues_button: true
+      use_issues_button: false
       use_repository_button: true
-      use_edit_page_button: true
+      use_edit_page_button: false
       launch_buttons:
         {
           binderhub_url: "https://mybinder.org",
