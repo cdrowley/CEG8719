@@ -3,28 +3,27 @@
 
 format: jb-book
 root: README
-
 parts:
-  - caption: 'Introduction'
+  - caption: Introduction
     chapters:
-    - file: book/introduction
+      - file: book/introduction
 
   - caption: 'Chapters / Notebooks'
     numbered: true
     maxdepth: 2
     chapters:
-    - file: book/data_discovery
-    - file: book/data_access
-    - file: book/data_download
-    - file: book/data_analysis
-    - file: book/data_integration
-    - file: book/data_reusability
-    - file: book/fair_principles
+      - file: book/data_discovery
+      - file: book/data_access
+      - file: book/data_download
+      - file: book/data_analysis
+      - file: book/data_integration
+      - file: book/data_reusability
+      - file: book/fair_principles
 
-  - caption: 'Conclusion'
+  - caption: Conclusion
     chapters:
-    - file: book/conclusion
+      - file: book/conclusion
 
-  - caption: 'Appendices'
+  - caption: Appendices
     chapters:
-    - file: book/bibliography
+      - file: book/bibliography
