@@ -18,3 +18,6 @@ Aafasfasfa
 asfafasfafaf:
 - asfsaf
   - asffaf
+
+```{bibliography}
+```
