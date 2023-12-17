@@ -1,6 +1,14 @@
-.PHONY: book_venv book clean
+.PHONY: dev_venv book_venv book clean
 
 SHELL := /bin/bash
+
+venv:
+	@echo "Creating .venv"
+	set -e; \
+	python -m venv .venv; \
+	source .dev_venv/bin/activate; \
+	pip install --upgrade pip; \
+	pip install -r requirements_dev.txt;
 
 book_venv:
 	@echo "Creating book venv"
@@ -16,3 +24,4 @@ book:
 
 clean:
 	rm -rf .book_venv;
+	rm -rf .venv;

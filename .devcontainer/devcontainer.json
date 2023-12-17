@@ -46,7 +46,7 @@
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install --user -r requirements_dev.txt"
+	"postCreateCommand": "make venv"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
