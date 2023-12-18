@@ -1,4 +1,4 @@
-.PHONY: dev_venv book_venv book clean
+.PHONY: venv book_venv book clean
 
 SHELL := /bin/bash
 
