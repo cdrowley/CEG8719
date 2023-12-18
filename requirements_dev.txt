@@ -8,3 +8,5 @@ folium
 PyPDF2
 beautifulsoup4
 ipykernel
+lxml
+pyarrow
