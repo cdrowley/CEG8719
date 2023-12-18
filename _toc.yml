@@ -14,9 +14,7 @@ parts:
     chapters:
       - file: book/data_discovery
       - file: book/data_access
-      - file: book/data_download
-      - file: book/data_analysis
-      - file: book/data_integration
+      - file: book/data_preview
       - file: book/data_reusability
       - file: book/fair_principles
 
