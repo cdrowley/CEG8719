@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
-import requests
-import pandas as pd
 
+import pandas as pd
+import requests
 
 get_filesize_mb = lambda filename: os.path.getsize(filename) / (1024 * 1024)
 

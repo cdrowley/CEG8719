@@ -1,8 +1,11 @@
-from utils import clean_columns
-import requests
-import pandas as pd
-from bs4 import BeautifulSoup
+from io import StringIO
 from typing import Optional
+
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+
+from utils import clean_columns
 
 
 def cdrc_login(username: str, password: str) -> Optional[requests.Session]:
@@ -48,12 +51,11 @@ def cdrc_get_metadata(
             .assign(
                 modified_date=lambda df: df["modified_date"].astype("datetime64[ns]"),
                 release_date=lambda df: df["release_date"].astype("datetime64[ns]"),
-                dataset=dataset,
             )
         )
 
     response = sess.get(source_url)
     if response.ok:
-        metadata = pd.read_html(response.text)
+        metadata = pd.read_html(StringIO(response.text))
         if len(metadata) == 1:
             return metadata[0].pipe(clean_metadata)
