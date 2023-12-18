@@ -6,7 +6,7 @@ venv:
 	@echo "Creating .venv"
 	set -e; \
 	python -m venv .venv; \
-	source .dev_venv/bin/activate; \
+	source .venv/bin/activate; \
 	pip install --upgrade pip; \
 	pip install -r requirements_dev.txt;
 
