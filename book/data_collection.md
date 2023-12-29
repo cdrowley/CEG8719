@@ -10,6 +10,15 @@ kernelspec:
   language: python
   name: python3
 ---
+
+# Data Collection
+
+## TODO
+### Introduction
+#### Data Access
+## Data Reusability
+#### FAIR Principles in Practice
+
 # Data Discovery
 
 Aafasfasfa
@@ -48,3 +57,4 @@ asfafasfafaf:
 ### CDRC Secure Datasets:
 - Access Requests In Progress
 
+## TODO mention the awkwardness of the CDRC api (use of dataset within api url vs as a parameter)

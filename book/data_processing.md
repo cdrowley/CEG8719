@@ -11,11 +11,7 @@ kernelspec:
   name: python3
 ---
 
-# Data Access
+# Data Processing
 
-Aafasfasfa
-
-## test
-asfafasfafaf:
-- asfsaf
-  - asffaf
+### TODO mention postgis, code, avoiding point and click, reproducibility
+### duckdb where possible for portability (write sql code once, run anywhere mostly)
