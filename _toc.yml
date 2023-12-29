@@ -4,24 +4,18 @@
 format: jb-book
 root: README
 parts:
-  - caption: Introduction
+  - caption: CEG8719 Write Up
+    numbered: true
     chapters:
       - file: book/introduction
-
-  - caption: 'Chapters / Notebooks'
-    numbered: true
-    maxdepth: 2
-    chapters:
-      - file: book/data_discovery
-      - file: book/data_access
+      - file: book/data_collection
       - file: book/data_preview
-      - file: book/data_reusability
-      - file: book/fair_principles
-
-  - caption: Conclusion
-    chapters:
-      - file: book/conclusion
-
-  - caption: Appendices
-    chapters:
+      - file: book/data_storage
+      - file: book/data_processing
+      - file: book/discussion
       - file: book/bibliography
+  
+  - caption: Data Collection Notebooks
+    chapters:
+      - file: data_collection/cdrc
+      - file: data_collection/ons
