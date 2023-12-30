@@ -1,6 +1,6 @@
 # CEG8719: Geospatial Data, Analytics and AI
 
-Welcome to the repository of my initial submission for CEG8719. This project focuses on the acquisition and pre-processing of a geospatial dataset but also serves and will be actively used as the development environment for collection and integration (initially local files but finally a cloud postgres database) of all open-source datasets through to the completion of my final MRes research paper in Summer 2024.
+Welcome to the repository for my coursework submission for CEG8719. This project focuses on the acquisition and pre-processing of a geospatial dataset but also serves and will be actively used as the development environment for collection and integration (initially local files but finally a cloud postgres database) for all open-source datasets used through to the completion of my final MRes research paper in Summer 2024.
 
 ## Acknowledgements
 

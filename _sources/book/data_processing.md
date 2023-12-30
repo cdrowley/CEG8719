@@ -10,11 +10,8 @@ kernelspec:
   language: python
   name: python3
 ---
-# FAIR Principles in Practice
 
-Aafasfasfa
+# Data Processing
 
-## test
-asfafasfafaf:
-- asfsaf
-  - asffaf
+### TODO mention postgis, code, avoiding point and click, reproducibility
+### duckdb where possible for portability (write sql code once, run anywhere mostly)

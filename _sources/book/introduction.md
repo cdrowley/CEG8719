@@ -10,14 +10,7 @@ kernelspec:
   language: python
   name: python3
 ---
-# Introduction
 
+# Introduction
 Aafasfasfa
 
-## test
-asfafasfafaf:
-- asfsaf
-  - asffaf
-
-```{bibliography}
-```

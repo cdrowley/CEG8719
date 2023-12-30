@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>4. Data Reusability &#8212; CEG8719</title>
+    <title>4. Data Storage &#8212; CEG8719</title>
   
   
   
@@ -62,12 +62,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'book/data_reusability';</script>
-    <link rel="canonical" href="https://cdrowley.github.io/CEG8719/book/data_reusability.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'book/data_storage';</script>
+    <link rel="canonical" href="https://cdrowley.github.io/CEG8719/book/data_storage.html" />
     <link rel="shortcut icon" href="../_static/fav.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. FAIR Principles in Practice" href="fair_principles.html" />
+    <link rel="next" title="5. Data Processing" href="data_processing.html" />
     <link rel="prev" title="3. Data Preview" href="data_preview.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -162,25 +162,20 @@ const thebe_selector_output = ".output, .cell_output"
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters / Notebooks</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">CEG8719 Write Up</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="data_discovery.html">1. Data Discovery</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_access.html">2. Data Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection.html">2. Data Collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_preview.html">3. Data Preview</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Data Reusability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fair_principles.html">5. FAIR Principles in Practice</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Data Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_processing.html">5. Data Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discussion.html">6. Discussion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">7. Bibliography</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Conclusion</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Collection Notebooks</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusion</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_collection/cdrc.html">CDRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_collection/ons.html">ONS</a></li>
 </ul>
 
     </div>
@@ -235,7 +230,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/cdrowley/CEG8719/master?urlpath=tree/book/data_reusability.md" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/cdrowley/CEG8719/master?urlpath=tree/book/data_storage.md" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -253,7 +248,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/cdrowley/CEG8719/blob/master/book/data_reusability.md" target="_blank"
+      <li><a href="https://colab.research.google.com/github/cdrowley/CEG8719/blob/master/book/data_storage.md" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -299,7 +294,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/book/data_reusability.ipynb" target="_blank"
+      <li><a href="../_sources/book/data_storage.ipynb" target="_blank"
    class="btn btn-sm btn-download-notebook-button dropdown-item"
    title="Download notebook file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -316,7 +311,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/book/data_reusability.md" target="_blank"
+      <li><a href="../_sources/book/data_storage.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -400,7 +395,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Data Reusability</h1>
+    <h1>Data Storage</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -410,7 +405,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test">4.1. test</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todo-start-with-a-brief-introduction-to-data-storage">4.1. TODO start with a brief introduction to data storage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mention-the-different-types-of-data-storage-formats">4.2. mention the different types of data storage formats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#go-onto-postgis-env-for-future-processing-and-working-with-data">4.3. go onto postgis env for future processing and working with data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-dev-container-enables-us-to-work-with-postgis-and-python">4.4. this dev container enables us to work with postgis and python …</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test">4.5. test</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mention-potential-for-geoparquet-in-the-future">4.6. Mention potential for geoparquet in the future</a></li>
 </ul>
             </nav>
         </div>
@@ -422,11 +422,25 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="data-reusability">
-<h1><span class="section-number">4. </span>Data Reusability<a class="headerlink" href="#data-reusability" title="Permalink to this heading">#</a></h1>
-<p>Aafasfasfa</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="data-storage">
+<h1><span class="section-number">4. </span>Data Storage<a class="headerlink" href="#data-storage" title="Permalink to this heading">#</a></h1>
+<section id="todo-start-with-a-brief-introduction-to-data-storage">
+<h2><span class="section-number">4.1. </span>TODO start with a brief introduction to data storage<a class="headerlink" href="#todo-start-with-a-brief-introduction-to-data-storage" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="mention-the-different-types-of-data-storage-formats">
+<h2><span class="section-number">4.2. </span>mention the different types of data storage formats<a class="headerlink" href="#mention-the-different-types-of-data-storage-formats" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="go-onto-postgis-env-for-future-processing-and-working-with-data">
+<h2><span class="section-number">4.3. </span>go onto postgis env for future processing and working with data<a class="headerlink" href="#go-onto-postgis-env-for-future-processing-and-working-with-data" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="this-dev-container-enables-us-to-work-with-postgis-and-python">
+<h2><span class="section-number">4.4. </span>this dev container enables us to work with postgis and python …<a class="headerlink" href="#this-dev-container-enables-us-to-work-with-postgis-and-python" title="Permalink to this heading">#</a></h2>
+</section>
 <section id="test">
-<h2><span class="section-number">4.1. </span>test<a class="headerlink" href="#test" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.5. </span>test<a class="headerlink" href="#test" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="mention-potential-for-geoparquet-in-the-future">
+<h2><span class="section-number">4.6. </span>Mention potential for geoparquet in the future<a class="headerlink" href="#mention-potential-for-geoparquet-in-the-future" title="Permalink to this heading">#</a></h2>
 <p>asfafasfafaf:</p>
 <ul class="simple">
 <li><p>asfsaf</p>
@@ -435,7 +449,7 @@ document.write(`
 </ul>
 </li>
 </ul>
-</section>
+<span class="target" id="id1"></span></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -478,11 +492,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="fair_principles.html"
+       href="data_processing.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>FAIR Principles in Practice</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Data Processing</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -501,7 +515,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test">4.1. test</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todo-start-with-a-brief-introduction-to-data-storage">4.1. TODO start with a brief introduction to data storage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mention-the-different-types-of-data-storage-formats">4.2. mention the different types of data storage formats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#go-onto-postgis-env-for-future-processing-and-working-with-data">4.3. go onto postgis env for future processing and working with data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-dev-container-enables-us-to-work-with-postgis-and-python">4.4. this dev container enables us to work with postgis and python …</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test">4.5. test</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mention-potential-for-geoparquet-in-the-future">4.6. Mention potential for geoparquet in the future</a></li>
 </ul>
   </nav></div>
 
