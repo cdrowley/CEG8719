@@ -13,24 +13,13 @@ kernelspec:
 
 # Data Collection
 
-## TODO
-### Introduction
-#### Data Access
-## Data Reusability
-#### FAIR Principles in Practice
+Data Access
+Data Reusability
+FAIR Principles in Practice
 
-# Data Discovery
-
-Aafasfasfa
-
-## test
-asfafasfafaf:
-- asfsaf
-  - asffaf
-
-## TODO mention metadata + standards in general
-
-## TODO mention the metadata on the CDRC website against the standards
+## Data Discovery
+TODO mention metadata + standards in general
+TODO mention the metadata on the CDRC website against the standards
 
 ### Key Datasources
 [![ONS Logo](https://www.nomisweb.co.uk/images/ons-logo.svg)](https://www.ons.gov.uk/) 
@@ -57,4 +46,4 @@ asfafasfafaf:
 ### CDRC Secure Datasets:
 - Access Requests In Progress
 
-## TODO mention the awkwardness of the CDRC api (use of dataset within api url vs as a parameter)
+TODO mention the awkwardness of the CDRC api (use of dataset within api url vs as a parameter)
