@@ -11,7 +11,5 @@ kernelspec:
   name: python3
 ---
 
-# Data Processing
-
-### TODO mention postgis, code, avoiding point and click, reproducibility
-### duckdb where possible for portability (write sql code once, run anywhere mostly)
+# Data Access
+ttt

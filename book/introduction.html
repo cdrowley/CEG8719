@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/fav.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2. Data Collection" href="data_collection.html" />
+    <link rel="next" title="2. Data Sources" href="data_sources.html" />
     <link rel="prev" title="CEG8719: Geospatial Data, Analytics and AI" href="../README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -162,18 +162,21 @@ const thebe_selector_output = ".output, .cell_output"
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">CEG8719 Write Up</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">CEG8719 Project</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection.html">2. Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_preview.html">3. Data Preview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_storage.html">4. Data Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_processing.html">5. Data Processing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discussion.html">6. Discussion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bibliography.html">7. Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_sources.html">2. Data Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_access.html">3. Data Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_use.html">4. Data Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discussion.html">5. Discussion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references_.html">6. References</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Collection Notebooks</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../data_collection/todo.html">Key Datasources</a></li>
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="../data_collection/cdrc.html">CDRC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data_collection/ons.html">ONS</a></li>
 </ul>
@@ -382,7 +385,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -398,6 +403,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-data-principles">1.1. FAIR Data Principles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-data-infrastructure">1.2. Spatial Data Infrastructure</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -409,7 +423,32 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction">
 <h1><span class="section-number">1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
-<p>Aafasfasfa</p>
+<p>An abundance of data available and it is increasingly geo-located. While some argue that spatial is not special and can be simply considered as an additional attribute or field, it is clear to practitioners that spatial data often requires specific domain knowledge and experience. As an example, the seemingly simple task of finding and using a spatial dataset is a process that is often fraught with additional challenges that must be overcome including: geo-file format, coordinate reference systems, spatial granularity, temporalities, privacy, to name a few. This is in addition to the more general challenges applicable to any data of discovery, access, quality, and usability.</p>
+<p>The purpose of this project is to document and critically analyse the challenges of finding, accessing, and utilising a geospatial dataset using the FAIR (Findability, Accessibility, Interoperability and Reusability) data principles <span id="id1">[<a class="reference internal" href="references_.html#id3" title="Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J. G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A. C Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, and Barend Mons. The fair guiding principles for scientific data management and stewardship. Scientific Data, 3:160018, 2016. URL: https://doi.org/10.1038/sdata.2016.18, doi:10.1038/sdata.2016.18.">Wilkinson <em>et al.</em>, 2016</a>]</span>. Further, the project will assess the platform hosting the geospatial dataset in terms of which tier of spatial data infrastructure (SDI) it belongs to. Finally, the project will detail options and tools around integrating the geospatial dataset with other datasets in the future.</p>
+<p>A side goal of this project is to utilise a series of modern tools and techniques that are gaining increased usage among the geospatial data science community. In pursuit of this aim, I established a development environment tailored for the collection, analysis, and visualization of geospatial data that can be used to document future (open) data collection efforts. This environment is anchored by the use of GitHub CodeSpaces, selected for its versatility, shareability, and accessibility through any web browser. The project’s documentation and presentation are adeptly managed through the Jupyter Book tool <span id="id2">[<a class="reference internal" href="references_.html#id4" title="Executable Books Community. Jupyter book. February 2021. URL: https://doi.org/10.5281/zenodo.4539666, doi:10.5281/zenodo.4539666.">Community, 2021</a>]</span>, while Jupyter Notebooks <span id="id3">[<a class="reference internal" href="references_.html#id5" title="Thomas Kluyver, Benjamin Ragan-Kelley, Fernando Pérez, Brian Granger, Matthias Bussonnier, Jonathan Frederic, Kyle Kelley, Jessica Hamrick, Jason Grout, Sylvain Corlay, Paul Ivanov, Damián Avila, Safia Abdalla, Carol Willing, and Jupyter development team. Jupyter notebooks a publishing format for reproducible computational workflows. In Fernando Loizides and Birgit Scmidt, editors, Positioning and Power in Academic Publishing: Players, Agents and Agendas, 87–90. IOS Press, 2016. URL: https://eprints.soton.ac.uk/403913/.">Kluyver <em>et al.</em>, 2016</a>]</span> provide a platform for effective data collection and visualisation.</p>
+<section id="fair-data-principles">
+<h2><span class="section-number">1.1. </span>FAIR Data Principles<a class="headerlink" href="#fair-data-principles" title="Permalink to this heading">#</a></h2>
+<p>The FAIR data principles were developed to provide a framework for scientific knowledge sharing and reuse. The principles that form the acronym (FAIR) itself explicitly attempt to enumerate a set of rules to enhance the findability, accessibility, interoperability, and reusability of digital assets.</p>
+<p>The principles are applicable to any digital asset, including geospatial data and are available online <span id="id4">[<a class="reference internal" href="references_.html#id6" title="GO FAIR. Fair principles. 2023. Last updated: October 2, 2023. Content on this website is licensed under a Creative Commons Attribution 4.0 License. URL: https://www.go-fair.org/fair-principles/ (visited on 2023-12-01).">FAIR, 2023</a>]</span>. The principles can be summarised as follows:</p>
+<ul class="simple">
+<li><p><strong>Findable</strong>: Data and metadata are easily locatable and identifiable through unique identifiers and rich, searchable metadata.</p></li>
+<li><p><strong>Accessible</strong>: Data and metadata can be reliably and securely retrieved using standardised techniques, with metadata remaining available even if the data is not.</p></li>
+<li><p><strong>Interoperable</strong>: Data and metadata are structured using common standards and languages, enabling seamless integration and use across various platforms and applications.</p></li>
+<li><p><strong>Reusable</strong>: Data and metadata are thoroughly documented and adhere to community standards, ensuring they can be effectively reused in different contexts and for various purposes.</p></li>
+</ul>
+<p>One criticism of these guidelines is that, while they are inclusive of specific and useful criteria such as the use of persistent identifiers, they offer only vauge and general guidance and offer no specific reference implementation. This makes them somewhat difficult to implement in practice as evidenced by <span id="id5">[<a class="reference internal" href="references_.html#id7" title="Tobias Kuhn Martorana, Margherita and Ronald Siebes. Aligning restricted access data with fair: a systematic review. PeerJ Computer Science, 8:e1038, 2022. doi:10.7717/peerj-cs.1038.">Martorana and Siebes, 2022</a>]</span> who conducted a study to discover methods and approaches to operationalise the FAIR principles as related to restricted research data. While this study may be misconstruing the purpose of the FAIR principles, in that the FAIR principles do not necessarily imply that data should be open or in other words the FAIR principles are distinct to open data practices, it does highlight the need for more specific guidance and reference implementations.</p>
+</section>
+<section id="spatial-data-infrastructure">
+<h2><span class="section-number">1.2. </span>Spatial Data Infrastructure<a class="headerlink" href="#spatial-data-infrastructure" title="Permalink to this heading">#</a></h2>
+<p>Spatial data infrastructure (SDI) is a framework of technologies, policies, and institutional arrangements that facilitate the availability of and access to spatial data <span id="id6">[<a class="reference internal" href="references_.html#id10" title="David O. Yawson, Frederick A. Armah, and Alex N. M. Pappoe. Enabling sustainability: hierarchical need-based framework for promoting sustainable data infrastructure in developing countries. Sustainability, 1(4):946–959, 2009. URL: https://www.mdpi.com/2071-1050/1/4/946, doi:10.3390/su1040946.">Yawson <em>et al.</em>, 2009</a>]</span>. The concept of SDI is not new, with the term first being coined in the 1990s <span id="id7">[<a class="reference internal" href="references_.html#id8" title="Michael F Goodchild, Max J Egenhofer, and Robin Fegeas. Interoperating giss. In Report of a specialist meeting held under the auspices of the Varenius ProjectNCGIA, 64. 1997.">Goodchild <em>et al.</em>, 1997</a>]</span> and has since expanded to include the notion of a spatial data ecosystem, which is a more holistic view of the spatial data landscape that includes the people, processes, and technologies that interact with spatial data. <span id="id8">[<a class="reference internal" href="references_.html#id9" title="Tatiana Delgado Fernandeza and Rafael Cruz Iglesiasb. Spatial data infrastructure: from national to local level. In World Conference. Proceeding. Rotterdam June. 2008.">Fernandeza and Iglesiasb, 2008</a>]</span> introduced the concept of SDI maturity levels, from local and regional to national as the focus was on official government SDIs.</p>
+<p>More recently, given the increasing availability of spatial data from non-governmental sources such as that from volunteered geographic information and private companies the levels have been redefined as tiers by the Open Geospatial Consortium (OGC) and International Organization for Standardization (ISO) <span id="id9">[<a class="reference internal" href="references_.html#id11" title="Open Geospatial Consortium (OGC), International Organization for Standards (ISO) Technical Committee 211 Geographic information/Geomatics, and International Hydrographic Organization (IHO). A guide to the role of standards in geospatial information management. https://ggim.un.org/meetings/GGIM-committee/8th-Session/documents/Standards_Guide_2018.pdf, August 2018. Version 2 Published August 2018.">Open Geospatial Consortium (OGC) <em>et al.</em>, 2018</a>]</span>, whereby each tier represents a level of maturity in terms of the availability and accessibility of spatial data and services.</p>
+<figure class="align-default" id="sdi-tiers-fig">
+<img alt="../_images/sdi-tiers.png" src="../_images/sdi-tiers.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1 </span><span class="caption-text">Spatial Data Infrastructure Tiers <span id="id10">[<a class="reference internal" href="references_.html#id11" title="Open Geospatial Consortium (OGC), International Organization for Standards (ISO) Technical Committee 211 Geographic information/Geomatics, and International Hydrographic Organization (IHO). A guide to the role of standards in geospatial information management. https://ggim.un.org/meetings/GGIM-committee/8th-Session/documents/Standards_Guide_2018.pdf, August 2018. Version 2 Published August 2018.">Open Geospatial Consortium (OGC) <em>et al.</em>, 2018</a>]</span></span><a class="headerlink" href="#sdi-tiers-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -452,11 +491,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="data_collection.html"
+       href="data_sources.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Data Collection</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Data Sources</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -466,6 +505,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-data-principles">1.1. FAIR Data Principles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-data-infrastructure">1.2. Spatial Data Infrastructure</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
