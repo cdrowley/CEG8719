@@ -11,16 +11,6 @@ kernelspec:
   name: python3
 ---
 
-# Data Collection
-
-Data Access
-Data Reusability
-FAIR Principles in Practice
-
-## Data Discovery
-TODO mention metadata + standards in general
-TODO mention the metadata on the CDRC website against the standards
-
 ### Key Datasources
 [![ONS Logo](https://www.nomisweb.co.uk/images/ons-logo.svg)](https://www.ons.gov.uk/) 
 
