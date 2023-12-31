@@ -4,18 +4,18 @@
 format: jb-book
 root: README
 parts:
-  - caption: CEG8719 Write Up
+  - caption: CEG8719 Project
     numbered: true
     chapters:
       - file: book/introduction
-      - file: book/data_collection
-      - file: book/data_preview
-      - file: book/data_storage
-      - file: book/data_processing
+      - file: book/data_sources
+      - file: book/data_access
+      - file: book/data_use
       - file: book/discussion
-      - file: book/bibliography
-  
+      - file: book/references_
+
   - caption: Data Collection Notebooks
     chapters:
+      - file: data_collection/todo
       - file: data_collection/cdrc
       - file: data_collection/ons

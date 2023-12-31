@@ -8,9 +8,9 @@
 title: CEG8719 # The title of the book. Will be placed in the left navbar.
 author: Christopher Clive Drowley # The author of the book
 copyright: "2023" # Copyright year to be placed in the footer
-logo: book/logo.png # A path to the book logo
+logo: book/images/logo.png # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
+exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", .venv/*, .notes/*]
 # Auto-exclude files not in the toc
 only_build_toc_files: true
 
@@ -41,7 +41,7 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  favicon: "book/fav.ico"
+  favicon: "book/images/fav.ico"
   baseurl: https://cdrowley.github.io/CEG8719 # The base URL where your book will be hosted.
   use_repository_button: true
   use_issues_button: true
