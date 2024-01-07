@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -77,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
 
@@ -120,12 +120,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -164,18 +172,15 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">CEG8719 Project</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="book/introduction.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="book/data_sources.html">2. Data Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="book/data_sources.html">2. Dataset &amp; Source</a></li>
 <li class="toctree-l1"><a class="reference internal" href="book/data_access.html">3. Data Access</a></li>
-<li class="toctree-l1"><a class="reference internal" href="book/data_use.html">4. Data Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="book/data_processing.html">4. Data Processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="book/discussion.html">5. Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="book/references_.html">6. References</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Collection Notebooks</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="data_collection/todo.html">Key Datasources</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="data_collection/todo.html">Key Data Sources &amp; Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_collection/cdrc.html">CDRC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_collection/ons.html">ONS</a></li>
 </ul>
@@ -341,6 +346,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting Started</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgements">Acknowledgements</a></li>
 </ul>
             </nav>
@@ -351,11 +357,41 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="ceg8719-geospatial-data-analytics-and-ai">
 <h1>CEG8719: Geospatial Data, Analytics and AI<a class="headerlink" href="#ceg8719-geospatial-data-analytics-and-ai" title="Permalink to this heading">#</a></h1>
 <p>Welcome to the repository for my coursework submission for CEG8719. This project focuses on the acquisition and pre-processing of a geospatial dataset but also serves and will be actively used as the development environment for collection and integration (initially local files but finally a cloud postgres database) for all open-source datasets used through to the completion of my final MRes research paper in Summer 2024.</p>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://github.com/codespaces/new/cdrowley/CEG8719?quickstart=1"><img alt="Open in GitHub Codespaces" src="https://github.com/codespaces/badge.svg" /></a></p>
+<p>Click the button above to open a new GitHub Codespace for this repository. This will create a new Codespace with all the required dependencies installed and ready to go.</p>
+<p>You can then start working on the project using the provided make commands in a terminal to either:</p>
+<ul class="simple">
+<li><p><strong>Making Book Changes</strong>:</p>
+<ul>
+<li><p>Following any changes, to rebuild the book use <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">book</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Add New Data Collection Notebooks</strong>:</p>
+<ul>
+<li><p>To alter or add new collection notebooks, follow these steps:</p></li>
+<li><p>Add any new required packages to <code class="docutils literal notranslate"><span class="pre">requirements_dev.txt</span></code>.</p></li>
+<li><p>Create dev virtual environment using <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">venv</span></code>.</p></li>
+<li><p>Modify or add a new notebook in the <code class="docutils literal notranslate"><span class="pre">data_collection/</span></code> directory.</p></li>
+<li><p>Save any collected data in <code class="docutils literal notranslate"><span class="pre">data/&lt;source&gt;/...</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Makefile Commands</strong>:
+The Makefile provides the following commands that you can execute:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">venv</span></code>: Creates a virtual environment for development notebooks.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">book</span></code>: Builds the Jupyter book for the project (using the <code class="docutils literal notranslate"><span class="pre">book_venv</span></code> environment).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">book_venv</span></code>: Used by <code class="docutils literal notranslate"><span class="pre">book</span></code> to creates a Mamba environment for the book (if not already created).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">clean</span></code>: Removes the <code class="docutils literal notranslate"><span class="pre">.venv</span></code> dev and <code class="docutils literal notranslate"><span class="pre">book_venv</span></code> book environments as well as the <code class="docutils literal notranslate"><span class="pre">book/_build</span></code> directory.</p></li>
+</ul>
+</section>
 <section id="acknowledgements">
 <h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this heading">#</a></h2>
 <p>The book/site was created using a <a class="reference external" href="https://github.com/giswqs/cookiecutter-jupyter-book">cookiecutter-jupyter-book template</a> from <a class="reference external" href="https://scholar.google.com/citations?user=vmml4_0AAAAJ">Qiusheng Wu</a>, which itself builds on the open source <a class="reference external" href="https://jupyterbook.org/">Jupyter Book project</a> and the <a class="reference external" href="https://github.com/executablebooks/cookiecutter-jupyter-book">executablebooks/cookiecutter-jupyter-book template</a>.</p>
@@ -414,12 +450,14 @@ document.write(`
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting Started</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgements">Acknowledgements</a></li>
 </ul>
   </nav></div>
@@ -469,8 +507,8 @@ By Christopher Clive Drowley
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>
