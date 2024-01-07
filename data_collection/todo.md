@@ -11,16 +11,21 @@ kernelspec:
   name: python3
 ---
 
-### Key Datasources
-[![ONS Logo](https://www.nomisweb.co.uk/images/ons-logo.svg)](https://www.ons.gov.uk/) 
+# Key Data Sources & Datasets
+
+## Office for National Statistics (ONS)
+
+[![ONS Logo](https://www.nomisweb.co.uk/images/ons-logo.svg)](https://www.ons.gov.uk/)
 
 - [Official Census and Labour Market Statistics](https://www.nomisweb.co.uk)
 - [Open Geography Portal](https://geoportal.statistics.gov.uk/)
 
+## Consumer Data Research Centre (CDRC)
 
-[![CDRC Logo](https://data.cdrc.ac.uk/sites/default/files/cdrclogo_0.svg)](https://data.cdrc.ac.uk/) 
+[![CDRC Logo](https://data.cdrc.ac.uk/sites/default/files/cdrclogo_0.svg)](https://data.cdrc.ac.uk/)
 
-### CDRC Open Datasets (to review):
+### CDRC Open Datasets (for review)
+
 - [CDRC Residential Mobility Index](https://data.cdrc.ac.uk/dataset/cdrc-residential-mobility-index)
 - [Internet User Classification](https://data.cdrc.ac.uk/dataset/internet-user-classification)
 - [Spatial Signatures of Great Britain](https://data.cdrc.ac.uk/dataset/spatial-signatures-great-britain)
@@ -30,10 +35,10 @@ kernelspec:
 - [Retail Centre Boundaries and Open Indicators](https://data.cdrc.ac.uk/dataset/retail-centre-boundaries-and-open-indicators)
 - [E-food Desert Index](https://data.cdrc.ac.uk/dataset/e-food-desert-index)
 
-### CDRC Safeguarded Datasets:
+### CDRC Safeguarded Datasets
+
 - Access Requests In Progress
 
-### CDRC Secure Datasets:
-- Access Requests In Progress
+### CDRC Secure Datasets
 
-TODO mention the awkwardness of the CDRC api (use of dataset within api url vs as a parameter)
+- Access Requests In Progress
